@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript</title>
+</head>
+<body>
+    <h1>Exercícios de JavaScript</h1>
+
+    <button onclick="carregarExercicio('ex01.js')">Executar Exercício 01</button>
+    <button onclick="carregarExercicio('ex02.js')">Executar Exercício 02</button>
+    <button onclick="carregarExercicio('ex03.js')">Executar Exercício 03</button>
+    <button onclick="carregarExercicio('ex04.js')">Executar Exercício 04</button>
+    <button onclick="carregarExercicio('ex05.js')">Executar Exercício 05</button>
+
+    <script>
+        function carregarExercicio(arquivo) {
+            const script = document.createElement('script');
+            script.src = arquivo;
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
